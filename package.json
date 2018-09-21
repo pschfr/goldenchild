@@ -1,0 +1,12 @@
+{
+  "name": "site",
+  "vapid": {
+  },
+  "scripts": {
+    "start": "vapid start ."
+  },
+  "dependencies": {
+    "vapid-cli": "^0.1.23",
+    "tachyons-sass": "^4.9.3"
+  }
+}
