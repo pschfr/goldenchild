@@ -3,22 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ name }} &mdash; {{ tagline }}</title>
+	<title>{{site_title}} {{#if site_tagline}} &mdash; {{site_tagline required=false}}{{/if}}</title>
 	<link rel="stylesheet" href="/stylesheets/site.css">
 </head>
-<body class="sans-serif pa4" style="background-image: url({{background_image type=image tag=false required=false}})">
-	<header>
-		<h1>{{ name }}</h1>
-		<h2>{{ tagline }}</h2>
-	</header>
+<body class="sans-serif pa4" {{#if background_image}}style="background-image: url({{background_image type=image tag=false required=false}})"{{/if}}>
+	{{> header}}
 
-<!--
-	{{#form contact subject="Vapid Example Contact Form"}}
-  		{{name}}
-  		{{email}}
-  		{{message long=true}}
+	{{#form contact}}
+		{{name}}
+		{{email}}
+		{{message long=true}}
 	{{/form}}
--->
 
 	<script src="/javascripts/site.js"></script>
 </body>
