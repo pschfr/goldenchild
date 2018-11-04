@@ -1,12 +1,13 @@
 {
   "name": "site",
   "vapid": {
+    "site": "a95287b0-e06f-11e8-a282-e3df12a4a797"
   },
   "scripts": {
     "start": "vapid start ."
   },
   "dependencies": {
-    "vapid-cli": "^0.1.23",
-    "tachyons-sass": "^4.9.3"
+    "tachyons-sass": "^4.9.3",
+    "vapid-cli": "^0.1.23"
   }
 }
